@@ -1,5 +1,5 @@
-function Saudacao() {
-  return <h2>Olá James</h2>
+function Saudacao(props) {
+  return <h2>Olá {props.nome}</h2>
 }
 
 export default Saudacao;

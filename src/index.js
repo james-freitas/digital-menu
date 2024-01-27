@@ -5,6 +5,6 @@ import Saudacao from './components/saudacao/saudacao';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Saudacao/>
+    <Saudacao nome="Jason"/>
 );
 
