@@ -19,3 +19,20 @@ html, body {
   max-width: 17px;
   margin-right: 8px;
 }
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-red {
+  background-color: #E84F3D;
+  color: #fff;
+  border: 0px;
+  padding: 10px;
+  font-size: 1rem;
+}
