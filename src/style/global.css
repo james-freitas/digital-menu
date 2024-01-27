@@ -36,3 +36,28 @@ a {
   padding: 10px;
   font-size: 1rem;
 }
+
+.container {
+  margin-left: 30px;
+  margin-right: 30px;
+  max-width: 90%;
+  margin: auto;
+}
+
+.titulo h1{
+  font-size: 2.5em;
+}
+
+.subtitulo {
+  color: #747474;
+  font-size: 1.2rem;
+  max-width: 50%;
+  margin: auto;
+}
+
+/* When the maximum screen is until 1100*/
+@media screen and (max-width: 1100px) {
+  .subtitulo {
+    max-width: 95%;
+  }
+}
