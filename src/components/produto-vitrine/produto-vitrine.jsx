@@ -1,7 +1,25 @@
 import "./produto-vitrine.css"
 import bag from "../../assets/bag.png"
+import { CartContext } from "../../contexts/cart-context"
+import { useContext } from "react"
 
 function ProdutoVitrine(props) {
+  
+  const {AddItemCart} = useContext(CartContext);
+
+  function AddItem() {
+    
+    const item = {
+      id: props.id,
+      nome: props.nome,
+      preco: props.preco,
+      foto: props.foto,
+      qtd: 1
+    }
+
+    AddItemCart(item);
+  }
+  
   return <div className="produto-box text-center">
     <img src={props.foto} alt="Produto" className="prod-vitrine-foto" />
     
@@ -14,7 +32,7 @@ function ProdutoVitrine(props) {
     </div>
 
     <div>
-      <button className="btn btn-cart">
+      <button onClick={AddItem} className="btn btn-cart">
         <img src={bag} alt="" className="icon" />
         Adicionar
       </button>

@@ -12,6 +12,8 @@
 
 .footer-cart-valor {
   margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
   margin-bottom: 23px;
   display: flex;
   justify-content: space-between;
