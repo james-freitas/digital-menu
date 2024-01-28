@@ -13,7 +13,9 @@ function Navbar(props) {
   }
   
   return <div>
-    <img src={logo} alt="Logotipo" className="logotipo" />
+    <Link to="/">
+      <img src={logo} alt="Logotipo" className="logotipo" />
+    </Link>
 
     {
       props.showMenu && 
@@ -25,8 +27,6 @@ function Navbar(props) {
           </button>
         </div>
     }
-
-
 
     <Cart />
   </div>
