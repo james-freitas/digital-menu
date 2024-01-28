@@ -17,8 +17,6 @@ function Cart() {
     window.addEventListener('openSidebar', function(){
       setShow(true);
     });
-
-    // setItemsCart(carrinho);
   }, []);
 
   function checkout() {

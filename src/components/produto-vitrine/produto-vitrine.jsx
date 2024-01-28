@@ -1,5 +1,5 @@
 import "./produto-vitrine.css"
-import bag from "../../assets/bag.png"
+import bag from "../../assets/bag-black.png"
 import { CartContext } from "../../contexts/cart-context"
 import { useContext } from "react"
 
