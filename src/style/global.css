@@ -7,6 +7,27 @@ html, body {
   margin: 0;
 }
 
+input {
+  width: 100%;
+  font-size: 1.2rem;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 7px;
+  border: 1px solid #ccc;
+  color: #3d3d3d;
+}
+
+select {
+  width: 100%;
+  background-color: #fff;
+  font-size: 1.2rem;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 7px;
+  border: 1px solid #ccc;
+  color: #3d3d3d;
+}
+
 .text-center {
   text-align: center;
 }
@@ -72,12 +93,7 @@ a {
   margin: auto;
 }
 
-/* When the maximum screen is until 1100*/
-@media screen and (max-width: 1100px) {
-  .subtitulo {
-    max-width: 95%;
-  }
-}
+
 
 .btn-checkout {
   width: 100%;
@@ -94,4 +110,27 @@ a {
 
 .btn-checkout:hover {
   background-color: #c43829;
+}
+
+/* formatacao para tela de pc */
+.col-3 {
+  width: 33%;
+  display: inline-block; /* colunas ao lado uma da outra */
+  vertical-align: top;
+}
+
+.input-group {
+  margin-bottom: 30px;
+}
+
+/* When the maximum screen is until 1100 (cellphone) */
+@media screen and (max-width: 1100px) {
+  .subtitulo {
+    max-width: 95%;
+  }
+  .col-3 {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+  }
 }

@@ -3,7 +3,7 @@ import ProdutoVitrine from "../../components/produto-vitrine/produto-vitrine";
 
 function Home() {
   return <> 
-    <Navbar />
+    <Navbar showMenu={true}/>
 
     <div className="container">
       <div className="titulo text-center">
