@@ -66,7 +66,7 @@ function CartProvider(props) {
   }
 
   return <CartContext.Provider value={{cartItems, setCartItems, 
-                                        AddItemCart, RemoveItemCart, totalCart}}>
+                                        AddItemCart, RemoveItemCart, totalCart, setTotalCart}}>
       {props.children}
   </CartContext.Provider>
 }
