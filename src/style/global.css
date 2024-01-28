@@ -78,3 +78,20 @@ a {
     max-width: 95%;
   }
 }
+
+.btn-checkout {
+  width: 100%;
+  padding: 20px;
+  height: 70px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 0px;
+  background-color: #E84F3D;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-checkout:hover {
+  background-color: #c43829;
+}
