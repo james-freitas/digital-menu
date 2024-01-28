@@ -15,7 +15,7 @@ function Historico() {
         <table className="table">
           {
             pedidos.map(function(ped){
-              return <tr>
+              return <tr key={ped.id_pedido}>
                       <td><strong>Pedido {ped.id_pedido}</strong></td>
                       <td className="text-light">{ped.dt}</td>
                       <td className="text-red">
