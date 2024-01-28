@@ -4,16 +4,20 @@ import { Dock } from "react-dock";
 import ProdutoCart from "../produto-cart/produto-cart";
 import { useNavigate } from "react-router-dom";
 import "./cart.css"
+import { carrinho } from "../../dados.js";
 
 function Cart() {
   
   const [show, setShow] = useState(false);
   const navigate = useNavigate();
+  const [cardItems, setItemsCart] = useState([]);
 
   useEffect( function() {
     window.addEventListener('openSidebar', function(){
       setShow(true);
     });
+
+    setItemsCart(carrinho);
   }, []);
 
   function checkout() {
@@ -34,8 +38,19 @@ function Cart() {
     </div>
 
     <div className="lista-produtos">
-      <ProdutoCart />
-      <ProdutoCart />
+      {
+        cardItems.map(function(item){
+          return <ProdutoCart key={item.id}
+                              id={item.id}
+                              foto={item.foto}
+                              nome={item.nome}
+                              qtd={item.qtd}
+                              preco={item.preco}
+          />
+        })
+      }
+      
+      
     </div>
 
     <div className="footer-cart">
