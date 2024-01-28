@@ -1,8 +1,22 @@
 import Navbar from "../../components/navbar/navbar";
 import ProdutoVitrine from "../../components/produto-vitrine/produto-vitrine";
-import {produtos} from "../../dados.js"
+import api from "../../services/api.js";
+import { useEffect, useState } from "react";
 
 function Home() {
+
+  const [produtos, setProdutos] = useState([]);
+
+  useEffect(function(){
+    api.get("/produtos")
+    .then((resp) => {
+      setProdutos(resp.data);
+    })
+    .catch((err) => {
+      alert('Erro ao carregar produts');
+    })
+  },[]); // function chamada somente uma vez
+
   return <> 
     <Navbar showMenu={true}/>
 
