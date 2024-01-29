@@ -9,7 +9,7 @@ function Historico() {
   const [pedidos, setPedidos] = useState([]);
 
   useEffect(function(){
-    api.get("/produtos")
+    api.get("/pedidos")
     .then((resp) => {
       setPedidos(resp.data);
     })
