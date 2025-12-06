@@ -1,6 +1,6 @@
 import Navbar from "../../components/navbar/navbar";
 import "./historico.css";
-import {pedidos} from "../../dados.js"
+import {pedidos} from "../../dados.js"ru
 import { useEffect, useState } from "react";
 import api from "../../services/api.js"; 
 
